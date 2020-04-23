@@ -89,6 +89,8 @@ router.delete('/:id', validateAccountId(), async (req, res, next) => {
     };
 });
 
+// ---------  Validator Functions  ----------
+
 // validates account ID exists
 function validateAccountId() {
     return async (req, res, next) =>{
