@@ -1,5 +1,7 @@
 .intro-content{
-  border: 1px solid black;
+  // border: 1px solid black;
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 2px;
   width: 40%;
   margin: 5% auto 0 auto;
   padding: 2%;
@@ -13,3 +15,26 @@
     margin-top: 3%;
   }
 } // intro-content
+
+.btn-div{
+  margin-top: 2%;
+
+  button{
+    padding: 8px 12px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    background-color: skyblue;
+    color: white;
+    background-image: linear-gradient(to right, darkgreen 50%, transparent 50%);
+    background-position: 100% 0%;
+    background-size: 200% 100%;
+    transition: 0.5s;
+  } // button
+
+  button:hover{
+    cursor: pointer;
+    background-position: 0% 50%;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
+  }
+}

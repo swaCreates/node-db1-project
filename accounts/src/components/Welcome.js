@@ -1,6 +1,8 @@
 import React from 'react';
 import '../sass/Welcome.scss';
 
+import {Link} from 'react-router-dom';
+
 export default function Welcome() {
     return (
         <div>
@@ -12,6 +14,11 @@ export default function Welcome() {
                 <p className='para-two'>
                     Thank you.
                 </p>
+                </div>
+                <div className='btn-div'>
+                    <Link to='/accounts'>
+                        <button>Account Database</button>
+                    </Link>
                 </div>
             </section>
         </div>

@@ -11,7 +11,10 @@ function App() {
       <header className="App-header">
        <h1>Budgeting App</h1>
       </header>
-      <Welcome />
+      <Route 
+        exact path='/'
+        component={Welcome}
+      />
     </div>
   );
 }
