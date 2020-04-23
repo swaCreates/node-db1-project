@@ -1,8 +1,10 @@
 const express = require("express");
+const helmet= require('helmet');
 
 const db = require("../data/dbConfig.js");
 
 const welcome_router= require('../routers/welcome-router.js');
+const accounts_router= require('../routers/accounts-router.js');
 
 const server = express();
 
@@ -13,8 +15,9 @@ server.use(helmet());
 
 // route handlers
 server.use(welcome_router);
+server.use('/api/accounts', accounts_router);
 
-// when there is no router, handler
+// when there is no route, handler
 server.use((req, res) => {
     res.status(404).send(
         `<h4 align='center'>The url ${req.url.toUpperCase()} was not found.</h4>`
