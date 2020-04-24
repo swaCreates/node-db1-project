@@ -44,7 +44,7 @@ function App() {
           component={UsersAccountFeed}
         />
         <PrivateRoute 
-          exact path='/users-account/:id' 
+          path='/users-account/:id' 
           component={UserAccount}
         />
         <PrivateRoute 

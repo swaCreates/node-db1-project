@@ -7,7 +7,7 @@ import '../sass/UsersAccountFeed.scss';
 import axios from 'axios';
 import UserAccount from './UserAccount';
 
-export default function UsersAccountFeed() {
+export default function UsersAccountFeed(props) {
 
     const [accounts, setAccount]= useState([]);
 
@@ -27,7 +27,7 @@ export default function UsersAccountFeed() {
             {accounts.map((account) => {
               return  <Link key={account.id} to={`/users-account/${account.id}`}>
                             <UserAccount accountInfo={account}/>
-                      </Link>
+                      </Link> 
             })}
         </div>
     )
