@@ -5,7 +5,7 @@
   display: inline-block;
   width: 75%;
   margin-bottom: 4%;
-  color: green;
+  color: darkmagenta;
 }
 
 .warning{
@@ -32,6 +32,20 @@
     color: white;
   }
 }
+
+.addAcc{
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.addAcc:hover{
+  cursor: pointer;
+  background-color: skyblue;
+  color: white;
+}
+
 
 .App {
   text-align: center;

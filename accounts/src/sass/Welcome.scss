@@ -41,4 +41,8 @@
     background-position: 0% 50%;
     box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.25);
   } 
+
+  button:focus{
+    outline: none;
+  }
 } // btn-div
