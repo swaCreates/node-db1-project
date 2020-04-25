@@ -1,0 +1,59 @@
+.welcome-login{
+  font-size: 1rem;
+  font-weight: 300;
+  // border: 1px solid black;
+  display: inline-block;
+  width: 75%;
+  margin-bottom: 4%;
+  color: darkmagenta;
+}
+
+.warning{
+  font-size: 1rem;
+  font-weight: 300;
+  color: red;
+}
+
+.signout{
+  margin-left: 1%;
+  // border: 1px solid black;
+  display: inline-block;
+
+  button{
+    padding: 4px 8px;
+    border-radius: 2px;
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+
+  button:hover{
+    cursor: pointer;
+    background-color: red;
+    color: white;
+  }
+}
+
+.addAcc{
+  padding: 4px 8px;
+  border-radius: 2px;
+  font-size: 0.9rem;
+  font-weight: 300;
+}
+
+.addAcc:hover{
+  cursor: pointer;
+  background-color: skyblue;
+  color: white;
+}
+
+
+.App {
+  text-align: center;
+
+  h1{
+    margin: 2% auto 2% auto;
+    font-size: 1.7rem;
+    font-weight: 300;
+    text-decoration: underline;
+  } // h1
+} // App
